@@ -24,7 +24,7 @@ if st.button("Check"):
         "newbalanceDest": newbalanceDest
     }
 
-    res = requests.post("http://127.0.0.1:5000/predict", json=data)
+    res = requests.post("https://fraud-api-lrvc.onrender.com/predict", json=data)
 
     st.write("Status Code:", res.status_code)
     st.write("Response Text:", res.text)
