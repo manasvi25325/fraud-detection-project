@@ -3,7 +3,7 @@ import requests
 
 st.title("💳 Fraud Detection UI")
 
-step = st.number_input("Step", 10)
+step = st.number_input("Step", min_value=0, value=10)
 txn_type = st.selectbox("Type", ["PAYMENT", "TRANSFER", "CASH_OUT"])
 amount = st.number_input("Amount", 100)
 
